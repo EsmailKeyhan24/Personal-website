@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu-test</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style:none;
+        }
+        a{
+            text-decoration: none;
+        }
+        nav{
+            width: 100%;
+            height: 80px;
+            background-color:darkblue;
+            display: flex;
+            justify-content: center;
+        }
+        nav>ul{
+            width: 80%;
+            height: 100%;
+            /* background-color:orange; */
+            display: flex;
+            justify-content: center;
+        }
+        nav>ul>li{
+            height: 100%;
+            /* border:2px solid black; */
+        }
+        nav>ul>li>a{
+            display: flex;
+            height: 100%;
+            align-items: center;
+            color:#fff;
+            text-transform: capitalize;
+            padding:10px 20px;
+            /* background-color:purple; */
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 17px;
+            font-weight: 500;
+            transition:.5s;
+        }
+        nav>ul>li>a:hover{
+            background-color:rgb(133, 133, 133);
+            color:rgb(0, 0, 79);
+        }
+        nav>ul>li>ul{
+            width: 150%;
+            min-height:70px;
+            background-color:aquamarine;
+            opacity: 0;
+            visibility:hidden;
+            transform:translateY(10px);
+            transition:.2s;
+        }
+        nav>ul>li:hover>ul{
+            opacity: 1;
+            visibility:visible;
+            transform: translateY(0);
+        }
+        nav>ul>li>ul>li{
+            width: 100%;
+            height: 40px;
+            border-bottom:2px solid white;
+            position: relative;
+        }
+        nav>ul>li>ul>li>a{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            padding-left:10px;
+            font-weight: 500;
+            font-size:18px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color:#000;
+            text-transform: capitalize;
+        }
+
+        nav>ul>li>ul>li>ul{
+            width: 100%;
+            min-height:70px;
+            background-color:rgb(236, 236, 236);
+            position: absolute;
+            top: 0;left: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition:.2s;
+        }
+        nav>ul>li>ul>li:hover>ul{
+            opacity: 1;
+            visibility:visible;
+            transform: translateY(0);
+        }
+        nav>ul>li>ul>li>ul>li{
+            width: 100%;
+            height: 40px;
+            border-bottom:1px solid white;
+        }
+        nav>ul>li>ul>li>ul>li>a{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-left:10px;
+            font-size: 18px;
+            font-weight:500;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color:#000;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">resuma</a></li>
+            <li><a href="">services</a>
+                <ul>
+                    <li><a href="">web design</a></li>
+                    <li><a href="">Hosting</a></li>
+                    <li><a href="">seo</a></li>
+                    <li><a href="">Web application</a></li>
+                    <li><a href="">Logo designer</a></li>
+                    <li><a href="">cours</a>
+                        <ul>
+                            <li><a href="">Html/Html5</a></li>
+                            <li><a href="">Css/Css3</a></li>
+                            <li><a href="">Sass</a></li>
+                            <li><a href="">Git/Github</a></li>
+                            <li><a href="">Hosting</a></li>
+                            <li><a href="">seo</a></li>
+                            <li><a href="">bootstrap</a></li>
+                            <li><a href="">tailwind</a></li>
+                            <li><a href="">javaScript</a></li>
+                            <li><a href="">react.js</a></li>
+                            <li><a href="">next.js</a></li>
+                            <li><a href="">pwa</a></li>
+                            <li><a href="">api</a></li>
+                            <li><a href="">postman</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">bolg</a></li>
+            <li><a href="">contact</a>
+                <ul>
+                    <li><a href="">phone</a></li>
+                    <li><a href="">email</a></li>
+                    <li><a href="">web site</a></li>
+                    <li><a href="">whatsapp</a></li>
+                    <li><a href="">facebook</a></li>
+                    <li><a href="">instagrm</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
